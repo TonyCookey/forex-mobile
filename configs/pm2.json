@@ -1,0 +1,6 @@
+[{
+  "name": "forex-mobile",
+  "exec_interpreter": "node@8.9.4",
+	"script": "server.js",
+	"interpreter_args": "--harmony"
+}]
