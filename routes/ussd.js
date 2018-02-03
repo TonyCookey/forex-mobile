@@ -49,12 +49,7 @@ module.exports = [
     handler: getIncomingUssdMessage,
     options: {
       description: 'USSD Webhook',
-      tags: ['api'],
-      validate: {
-        payload: {
-          text: Joi.string().required().allow('').description('USSD command')
-        }
-      }
+      tags: ['api']
     }
   }
 ];

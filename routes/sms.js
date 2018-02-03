@@ -32,14 +32,7 @@ module.exports = [
     handler: getIncomingSmsMessage,
     options: {
       description: 'SMS Webhook',
-      tags: ['api'],
-      validate: {
-        payload: {
-          from: Joi.string().required().description("Sender's phone number"),
-          to: Joi.string().required().description("Receiver's short code"),
-          text: Joi.string().required().description('SMS text message')
-        }
-      }
+      tags: ['api']
     }
   }
 ];
